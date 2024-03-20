@@ -1,0 +1,43 @@
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+
+.wrapper{
+    width: 100%;
+    min-height: 100%;
+    margin: 0;
+    display: grid;
+    grid-template-rows:70px 70px auto auto;
+    grid-template-areas: 
+    "header"
+    "nav"
+    "main"
+    "footer"
+}
+
+body{
+    font-family: "Spectral SC", serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*  Visar prioritering på typsnitt, så alltid något kan användas */
+}
+
+nav{
+    grid-area: nav;
+    width: 100%;
+    height: 100%;
+}
+
+nav ul{
+    display: grid;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+}
+
+nav li{
+    list-style-type: none;
+    text-align: center;
+}
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+nav > ul > li > a > img{
+    width: 70%;
+}
