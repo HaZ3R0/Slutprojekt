@@ -5,7 +5,7 @@
     min-height: 100%;
     margin: 0;
     display: grid;
-    grid-template-rows:70px 70px auto auto;
+    grid-template-rows:185px 70px auto auto;
     grid-template-areas: 
     "header"
     "nav"
@@ -15,29 +15,44 @@
 
 body{
     font-family: "Spectral SC", serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*  Visar prioritering på typsnitt, så alltid något kan användas */
+    margin: 0;
+    background-color: #FAF9F6;
 }
 
-nav{
-    grid-area: nav;
-    width: 100%;
-    height: 100%;
-}
 
-nav ul{
+header > nav ul{
     display: grid;
     grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
 }
 
-nav li{
+header > nav li{
     list-style-type: none;
     text-align: center;
+    border: solid;
+    border-radius: 20%;
+}
+
+header > nav li:nth-child(6){
+    border: none;
+    background-color: #FAF9F6;
+}
+
+header > nav li:nth-child(1){
+    border: none;
+    background-color: #FAF9F6;
 }
 
 a:link{
     text-decoration: none;
-    color: black;
+    color: rgb(0, 0, 0);
 }
 
-nav > ul > li > a > img{
+header > nav > ul > li > a > img{
     width: 70%;
+}
+
+main{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
 }
