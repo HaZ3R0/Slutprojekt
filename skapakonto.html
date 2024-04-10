@@ -7,7 +7,7 @@
     <title>Skapa konto</title>
 </head>
 
-<body>
+<body id="skapakonto">
     
     <div class = "wrapper">
         <header>
@@ -42,6 +42,42 @@
         </header>
 
     <main>
+
+        <section>
+            <form action="index.html" method="post">
+                <p>
+                    <label for="namn">Namn:</label>
+                    <input type="text" name="namn" id="namn" required>
+                    <label for="namn" class="reqfield">
+                        <strong class="required" title="Obligatorisk">*</strong>
+                    </label>
+                </p>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" id="email" required>
+                    <label for="email" class="reqfield">
+                        <strong class="required" title="Obligatorisk">*</strong>
+                    </label>
+                </p>
+
+                <p>
+                    <label for="lösenord">Tel:</label>
+                    <input type="password" name="lösenord" id="lösenord" required>
+                    <label for="lösenord" class="reqfield">
+                        <strong class="required" title="Obligatorisk">*</strong>
+                    </label>
+                </p>
+                <p>
+                    <label for="password">Lösenord:</label>
+                    <input type="password" name="password" id="password" required>
+                    <label for="password" class="reqfield">
+                        <strong class="required" title="Obligatorisk">*</strong>
+                    </label>
+                </p>
+                <input type="submit" value="Logga in">
+             
+            </form>
+        </section>
 
     </main>
 
