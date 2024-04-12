@@ -39,10 +39,23 @@ main{
 }
 
 #sida4 main{
-    grid-area: main;
-    display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    justify-items: center;
+}
+
+#sida4 video{
+    width: 250px;
+}
+
+#sida4 section{
+    width: 100%;
+}
+
+h3 ~ p, h3 ~ p ~ video{
+    padding-left: 15px;
+}
+
+h2{
+    text-align: center;
 }
 
 #skapakonto main{
