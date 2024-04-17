@@ -2,10 +2,10 @@
 
 .wrapper{
     width: 100%;
-    min-height: 100%;
+    height: 100%;
     margin: 0;
     display: grid;
-    grid-template-rows:185px auto auto;
+    grid-template-rows:185px auto 80px;
     grid-template-areas: 
     "header"
     "main"
@@ -28,26 +28,39 @@ body{
     font-family: "Spectral SC", serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*  Visar prioritering på typsnitt, så alltid något kan användas */
     margin: 0;
     background-color: #FAF9F6;
+    height: 100vh;
 }
 
 main{
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left: 30px;
+    padding-left: 10px;
     justify-items: center;
 }
 
 #sida4 main{
     grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 25px;
+    overflow-y: auto;
+    overflow-x: hidden;
 }
 
 #sida4 video{
-    width: 250px;
+    width: 65%;
+    padding: 0;
 }
 
 #sida4 section{
     width: 100%;
+    background-color: rgb(219, 219, 219);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+#sida4 section img{
+    width: 65%;
+    border-radius: 10px;
 }
 
 h3 ~ p, h3 ~ p ~ video{
@@ -65,7 +78,7 @@ h2{
     justify-items: center;
 }
 
-main > section:nth-child(2) > img {
+main > section:nth-child(2) > img{
     width: 80%;
 }
 
@@ -179,7 +192,6 @@ footer{
     grid-area: footer;
     background-image: linear-gradient(#4caf50,#265828);
     color: white;
-    position: absolute;
     bottom: 0;
     width: 100%;
     text-align: center;
