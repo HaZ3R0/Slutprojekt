@@ -25,7 +25,7 @@ header{
 }
 
 body{
-    font-family: "Spectral SC", serif, 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /*  Visar prioritering på typsnitt, så alltid något kan användas */
+    font-family: "Spectral SC", serif, 'Segoe UI', Tahoma, Verdana, sans-serif; /*  Visar prioritering på typsnitt, så alltid något kan användas */
     margin: 0;
     background-color: #FAF9F6;
     height: 100vh;
@@ -200,6 +200,15 @@ nav > ul{
 
 #skapakonto .reqfield{
     padding-left: 5px;
+}
+
+#skapakonto fieldset{
+    border-radius: 10px;
+}
+
+#skapakonto fieldset:last-of-type{
+    padding-top: 15px;
+    border-style: none;
 }
 
 footer{

@@ -45,38 +45,55 @@
 
         <section>
             <form action="index.html" method="post">
-                <p>
-                    <label for="namn">Namn:</label>
-                    <input type="text" name="namn" id="namn" required>
-                    <label for="namn" class="reqfield">
-                        <strong class="required" title="Obligatorisk">*</strong>
-                    </label>
-                </p>
-                <p>
-                    <label for="email">Email:</label>
-                    <input type="email" name="email" id="email" required>
-                    <label for="email" class="reqfield">
-                        <strong class="required" title="Obligatorisk">*</strong>
-                    </label>
-                </p>
 
-                <p>
-                    <label for="tel">Tel:</label>
-                    <input type="tel" name="tel" id="tel" required>
-                    <label for="lösenord" class="reqfield">
-                        <strong class="required" title="Obligatorisk">*</strong>
-                    </label>
-                </p>
-                <p>
-                    <label for="password">Lösenord:</label>
-                    <input type="password" name="password" id="password" required>
-                    <label for="password" class="reqfield">
-                        <strong class="required" title="Obligatorisk">*</strong>
-                    </label>
-                </p>
-                <input type="submit" value="Logga in">
-             
-            </form>
+                <fieldset>
+                    <legend>Vem är du?</legend>
+                    <p>
+                        <label for="förnamn">Förnamn:</label>
+                        <input type="text" name="förnamn" id="förnamn" required>
+                        <label for="förnamn" class="reqfield">
+                            <strong class="required" title="Obligatorisk">*</strong>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="efternamn">Efternamn:</label>
+                        <input type="text" name="efternamn" id="efternamn">
+                        <label for="förnamn" class="reqfield">
+                            <strong class="required" title="Obligatorisk">*</strong>
+                        </label>
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <legend>Kontaktuppgifter</legend>
+                    <p>
+                        <label for="email">Email:</label>
+                        <input type="email" name="email" id="email" required>
+                        <label for="email" class="reqfield">
+                            <strong class="required" title="Obligatorisk">*</strong>
+                        </label>
+                    </p>
+
+                    <p>
+                        <label for="tel">Tel:</label>
+                        <input type="tel" name="tel" id="tel" required>
+                        <label for="lösenord" class="reqfield">
+                            <strong class="required" title="Obligatorisk">*</strong>
+                        </label>
+                    </p>
+                    <p>
+                        <label for="password">Lösenord:</label>
+                        <input type="password" name="password" id="password" required>
+                        <label for="password" class="reqfield">
+                            <strong class="required" title="Obligatorisk">*</strong>
+                        </label>
+                    </p>
+                </fieldset>
+                
+                <fieldset>
+                    <input type="submit" value="Logga in">
+                </fieldset>
         </section>
 
     </main>
