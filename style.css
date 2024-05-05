@@ -1,49 +1,49 @@
-@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Spectral+SC:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;1,200;1,300;1,400;1,500;1,600;1,700;1,800&display=swap'); /* Länkar en font jag vill ha till sidan */
 
-.wrapper{
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    display: grid;
-    grid-template-rows:250px auto 80px;
-    grid-template-areas: 
+.wrapper{ /* Klassselektor till diven på sidorna */
+    width: 100%; /* Sätter bredden till 100% av sidans bredd */
+    height: 100%; /* Sätter höjden till 100% av sidans höjd */
+    margin: 0; /* Gör så det inte blir någon margin på något alltsp typ mellanrum */
+    display: grid; /* Gör så griden syns */
+    grid-template-rows:250px auto 80px; /* Delar in sidan i 3 rader varje storlek för varje rad. Auto gör så den delen tar den plats den behöver */
+    grid-template-areas: /* Beskriver vilka alla ställen är */
     "header"
     "main"
     "footer"
 }
 
-header{
-    grid-area: header;
+header{ /* typselektor*/
+    grid-area: header; /* Säger vilken gridarea det är i */
     display: grid;
-    grid-template-rows: auto auto;
+    grid-template-rows: auto auto; /* Delar in header i två för jag har naven i header */
 }
 
-header > nav:first-of-type ul{
+nav:first-of-type ul{ /* Alla uls i den första naven effekteras här (Globalmenyn) */
     display: grid;
-    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr;
-    align-items: center;
+    grid-template-columns: 0.5fr 1fr 1fr 1fr 1fr 0.5fr; /* Delar in naven i 6 columer, fr är beronde på skrämens storlek */
+    align-items: center; /* Placerar sakerna i mitten */
     justify-items: center;
     margin: 0;
     padding: 0;
-    gap: 15px;
+    gap: 15px; /* Lägger ett mellanrum mellan elementen */
     height: 100%;
 }
 
-nav > ul{
+nav > ul{ /* Barnselektor ändrar i min lokal meny  */
     display: grid;
     grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
+    align-items: center; /* Centrerar innehållet på y-axeln */
+    justify-items: center; /* Centrerar innehållet på x-axeln */ 
     margin: 0;
     padding: 0;
     height: 100%;
 }
 
 header > nav{
-    background-image: linear-gradient(#ADD8E6, #75afc2  );
+    background-image: linear-gradient(#ADD8E6, #75afc2); /* Ändrar backgrundsfärgen, andväder background-image för vill ha linear-gradient så backgrunden fadear i två olika färger  */
 }
 
-header nav:nth-child(2){
+header nav:nth-child(2){ /* Avkomlingsselektor med en strukturell psuedoklass */
     align-items: center;
     justify-content: center;
     background-image: linear-gradient(#75afc2, #ADD8E6);
@@ -52,21 +52,21 @@ header nav:nth-child(2){
 nav li{
     display: grid;
     justify-content: stretch;
-    list-style-type: none;
-    text-align: center;
-    border: thin solid hsl(0,0%,100%);
-    border-radius: 30%;
-    background-color:rgba(0, 0, 0, 0.150);
-    width: 75%;
-    font-size: 2.5ch;
-    color: white;
-    transition: 0.5s;
-    padding: 0;
+    list-style-type: none; /* Gör så det inte är någon form av lista */
+    text-align: center; /* Centrerar texten till mitten */
+    border: thin solid hsl(0,0%,100%);  /* Skapar en border första är tjockleken andra är vilken typ av border tredje är vilken färg den ska va */
+    border-radius: 30%;  /* Rundar av kanterna */
+    background-color:rgba(0, 0, 0, 0.150);  /* Ändrar bakgrundsfärgen sista är så den blir trasparant */
+    width: 75%; /* Ändrar bredden på li elementet */
+    font-size: 2.5ch; /* Ändrar så storleken på texten, ch är bredden på 0 */
+    color: white; /* Ändrar text färgen */
+    transition: 0.5s; /* Lägger en transtion på li, så den går smooth tillbaka från när man hoverar över den */
+    padding: 0; /* Tar bort padding */
 }
 
-header > nav li:hover, nav li:hover{
+header > nav li:hover, nav li:hover{ /* klass selektor med en pseudoklass hover */
     transition: 0.5s;
-    transform: scale(1.05);
+    transform: scale(1.05); /* Gör så det blir 5% större */
 }
 
 header > nav:first-of-type li:nth-child(1), header > nav li:nth-child(6){
@@ -75,7 +75,7 @@ header > nav:first-of-type li:nth-child(1), header > nav li:nth-child(6){
     background-color: rgb(0, 0, 0, 0);
 }
 
-a:link, a:visited, a:hover, a:active, a:focus{
+a:link, a:visited, a:hover, a:active, a:focus{ /* LOVE FOUCUS HATE */
     text-decoration: none;
     color: rgb(255, 255,255);
 }
@@ -85,40 +85,38 @@ header > nav > ul > li:first-of-type:hover, header > nav > ul > li:last-of-type:
     transform: scale(1.03);
 }
 
-
-#esporten header{
-    grid-area: header;
+#esporten header{ /* Id selektor med avkomlings slektor */
     display: grid;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto auto; /* Delar in min header i tre här för att jag har en lokal meny också */
 }
 
-body{
+body{ /* Typ selektor */
     font-family: "Spectral SC", serif, 'Segoe UI', Tahoma, Verdana, sans-serif; /*  Visar prioritering på typsnitt, så alltid något kan användas */
     margin: 0;
     background-color: #FAF9F6;
-    height: 100vh;
+    height: 100vh; /* vh står för vertical height alltså den vertikala höjden av sidan */
 }
 
 main{
     grid-area: main;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    padding-left:10px;
-    grid-gap: 25px;
+    padding-left: 10px; /* Lägger padding till vänster för att flytta ut allt i main lite till höger */
+    grid-gap: 25px; /* Lägger ett mellanrum mellan gridarna */
     justify-items: center;
-    overflow-y: auto;
-    overflow-x: hidden;
+    overflow-y: auto; /* Gör så du kan scrolla ner på bara main om det behövs */
+    overflow-x: hidden; /* Gör så du inte kan scrolla åt sidan */
 }
 
 #utveckling section, #spel section{
-    width: 100%;
+    
     background-color: rgb(219, 219, 219);
     border-radius: 20px;
     padding: 10px;
 }
 
 #utveckling section:nth-child(even){
-    display: flex;
+    display: flex; /* Så saker förändras basserat på omgivningen, använder den för att centrera mina bilder i sektionerna */
     justify-items: center;
     justify-content: center;
 }
@@ -141,7 +139,7 @@ main{
 }
 
 #spel section:last-of-type{
-    grid-column-start: 2;
+    grid-column-start: 2; /* Gör så att detta element börjar på andra columen */
 }
 
 #spel video{
@@ -159,7 +157,7 @@ img{
     width: 80%;
 }
 
-h3 ~ p, h3 ~ p ~ video{
+h3 + p, h3 ~ p ~ video{ /* Klass selektor med angränsande syskon selektor och syskon selektor i, syskon selektor effekterar alla element som ligger efter det andra medan angränsade syskon slektor är direkt efter det andra */
     padding-left: 15px;
 }
 
@@ -175,18 +173,14 @@ h2{
 }
 
 h1{
-    font-size: 2.5em;
-    font-weight: 600;
+    font-size: 2.5em; /* 1Em = 100% av typsnittets höjd */
+    font-weight: 600; /* Ändrar tjockleken på texten */
     padding-left: 20px;
 }
 
 dt{
     font-weight: 600;
-    padding-top: 10px;
-}
-
-li{
-    padding-top: 10px;
+    padding-top: 10px; /* Padding på översidan, lägger det här så det blir lite större mellanrum på sakerna */
 }
 
 caption{
@@ -200,12 +194,12 @@ table, td, th{
 }
 
 tr:nth-child(even){
-    background-color: rgb(0, 0, 0, 0.2);
+    background-color: rgb(0, 0, 0, 0.2); /* Gör så det blir zebra striping */
 }
 
 #skapakonto form p{
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: wrap; /* Använder det så att alla elementen ligger längs med varandra efter varndra */
     width: 100%;
 }
 
@@ -223,7 +217,7 @@ fieldset{
 
 #skapakonto fieldset:last-of-type{
     padding-top: 15px;
-    border-style: none;
+    border-style: none; /* Gör så det inte blir någon boarder */
 }
 
 button{
@@ -235,23 +229,24 @@ footer{
     grid-area: footer;
     background-image: linear-gradient(#4caf50,#265828);
     color: white;
-    bottom: 0;
     width: 100%;
     text-align: center;
 }
 
-@media only screen and (max-width: 800px){
+@media only screen and (max-width: 800px){ /* Ändrar så när bredden är 800px som max så ändras dessa saker */
     
     header > nav:first-of-type ul{
         display: flex;
-        flex-direction:column;
+        flex-direction: column; /* Gör så att det blir en enspaltslayout för globalmenyn */
+    }
+
+    main{
+        padding-left: 0px; /* Tar bort min padding left för den gjorde så det såg konstigt ut på mobil */
+        padding: 5px; /* Gör så det blir padding runt hela main, så de sidor där section har en bakrunds färg blir lite snyggare  */
     }
 
     .wrapper{
-        width: 100%;
-        height: 100%;
-        margin: 0;
-        display: grid;
+        display: grid; 
         grid-template-rows:auto auto 80px;
         grid-template-areas: 
         "header"
@@ -261,11 +256,11 @@ footer{
 
     main{
         display: flex;
-        flex-direction: column;
+        flex-direction: column; /* Gör om allt till enspalts layout */
     }
 
-    body{
-        height: auto;
+    body{ /* Tog bort så sidan tar den höjd den hehöver, så änvändaren kan scrolla på hela sidan */
+        height: auto; 
     }
 
     header > nav:first-of-type img{

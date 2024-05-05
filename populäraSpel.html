@@ -7,7 +7,7 @@
 		<title>Populära spel</title>
 	</head>
 
-	<body id="spel">
+	<body id="spel"> <!-- Lägger id på sidans body för dens layout sticker ut -->
 		<div class="wrapper">
 			<header>
 				<nav>
@@ -100,51 +100,54 @@
 				<section>
 					<form action="index.html" method="post"> <!-- Skapar forumläret och vart man skickas när man är klar och vilken method som används, i detta fall post som gör att saker inte syns i webbläsaren -->
 
-						<fieldset> <!-- Skapar typ en border runt -->
+						<fieldset> <!-- Skapar typ en border runt formuläret -->
 							<legend>Snabbt Quiz</legend> <!-- Rubrik till forumuläret -->
 
 							<p>Vilka spel spelar du?</p>
-				
-							<input type="checkbox" name="spel1" id="fortnite" value="fortnite"> <!-- -->
-							<label for="fortnite">Fortnite</label> <br>
-							
-							<input type="checkbox" name="spel1" id="minecraft" value="minecraft">
-							<label for="minecraft">Minecraft</label> <br>
+							<p>
+								<input type="checkbox" name="spel1" id="fortnite" value="fortnite"> <!-- Skapar en checkbox -->
+								<label for="fortnite">Fortnite</label> <br> <!-- Kopplar till checkboxen -->
+								
+								<input type="checkbox" name="spel1" id="minecraft" value="minecraft">
+								<label for="minecraft">Minecraft</label> <br>
 
-							<input type="checkbox" name="spel1" id="CSGO2" value="CSGO2">
-							<label for="CSGO2"> CS GO 2</label> <br>
+								<input type="checkbox" name="spel1" id="CSGO2" value="CSGO2">
+								<label for="CSGO2"> CS GO 2</label> <br>
 
-							<input type="checkbox" name="spel1" id="COD" value="COD">
-							<label for="COD">Call off Duty</label> <br>
+								<input type="checkbox" name="spel1" id="COD" value="COD">
+								<label for="COD">Call off Duty</label> <br>
 
-							<input type="checkbox" name="spel1" id="GTA" value="GTA">
-							<label for="GTA">Grand theft auto v</label> <br>
+								<input type="checkbox" name="spel1" id="GTA" value="GTA">
+								<label for="GTA">Grand theft auto v</label> <br>
 
-							<input type="checkbox" name="spel1" id="annat" value="annat">
-							<label for="annat">Annat</label>
+								<input type="checkbox" name="spel1" id="annat" value="annat">
+								<label for="annat">Annat</label>
+							</p>
 
 							<p>Vilket spel är bäst?</p>
 							
-							<input type="radio" name="spel2" id="fortnite2" value="fortnite">
-							<label for="fortnite2">Fortnite</label> <br>
-							
-							<input type="radio" name="spel2" id="minecraft2" value="minecraft">
-							<label for="minecraft2">Minecraft</label> <br>
+							<p>
+								<input type="radio" name="spel2" id="fortnite2" value="fortnite"> <!-- Skapar en radio knapp -->
+								<label for="fortnite2">Fortnite</label> <br> <!-- Kopplar till radioknappen-->
+								
+								<input type="radio" name="spel2" id="minecraft2" value="minecraft">
+								<label for="minecraft2">Minecraft</label> <br>
 
-							<input type="radio" name="spel2" id="CSGO22" value="CSGO2">
-							<label for="CSGO22"> CS GO 2</label> <br>
+								<input type="radio" name="spel2" id="CSGO22" value="CSGO2">
+								<label for="CSGO22"> CS GO 2</label> <br>
 
-							<input type="radio" name="spel2" id="COD2" value="COD">
-							<label for="COD2">Call off Duty</label> <br>
+								<input type="radio" name="spel2" id="COD2" value="COD">
+								<label for="COD2">Call off Duty</label> <br>
 
-							<input type="radio" name="spel2" id="GTA2" value="GTA">
-							<label for="GTA2">Grand theft auto v</label> <br>
+								<input type="radio" name="spel2" id="GTA2" value="GTA">
+								<label for="GTA2">Grand theft auto v</label> <br>
 
-							<input type="radio" name="spel2" id="annat2" value="annat">
-							<label for="annat2">Annat</label> <br>
+								<input type="radio" name="spel2" id="annat2" value="annat">
+								<label for="annat2">Annat</label>
+							</p>
 						</fieldset>
 
-						<button type="submit">Svara</button>
+						<button type="submit">Svara</button> <!-- Skapar en submit knapp -->
 					</form>
 				</section>
 			</main>
