@@ -194,7 +194,7 @@ caption{
 }
 
 table, td, th{
-    border: thin solid rgb(0, 0, 0);
+    border: thin solid black;
     border-collapse: collapse;
     width: 100%;
 }

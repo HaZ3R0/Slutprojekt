@@ -1,107 +1,106 @@
 <!DOCTYPE html>
 <html lang="sv">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>Skapa konto</title>
-</head>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="style.css">
+        <title>Skapa konto</title>
+    </head>
 
-<body id="skapakonto">
-    
-    <div class="wrapper">
-        <header>
-            <nav>
-                <ul>
-                    <li>
-                        <a href="index.html"> <img src="/Bilder/hemKnapp.png" alt="Hem knapp"></a>
-                    </li>
+    <body id="skapakonto">
+        
+        <div class="wrapper">
+            <header>
+                <nav>
+                    <ul>
+                        <li>
+                            <a href="index.html"> <img src="/Bilder/hemKnapp.png" alt="Hem knapp"></a>
+                        </li>
 
-                    <li>
-                        <a href="spelensUtveckling.html"> Spelens utveckling</a>
-                    </li>
+                        <li>
+                            <a href="spelensUtveckling.html"> Spelens utveckling</a>
+                        </li>
 
-                    <li>
-                        <a href="e-sporten.html"> E-sporten</a>
-                    </li>
+                        <li>
+                            <a href="e-sporten.html"> E-sporten</a>
+                        </li>
 
-                    <li>
-                        <a href="spelensCharm.html"> Spelens charm</a>
-                    </li>
+                        <li>
+                            <a href="spelensCharm.html"> Spelens charm</a>
+                        </li>
 
-                    <li>
-                        <a href="populäraSpel.html"> Populära spel</a>
-                    </li>
+                        <li>
+                            <a href="populäraSpel.html"> Populära spel</a>
+                        </li>
 
-                    <li>
-                        <a href="skapakonto.html"> <img src="/Bilder/skapaKontoLogga.png" alt="Skapa konto"></a>
-                    </li>
-                </ul>
-            </nav>
-            <h1>Skapa konto</h1>
-        </header>
+                        <li>
+                            <a href="skapakonto.html"> <img src="/Bilder/skapaKontoLogga.png" alt="Skapa konto"></a>
+                        </li>
+                    </ul>
+                </nav>
+                <h1>Skapa konto</h1>
+            </header>
 
-    <main>
+            <main>
+                <section>
+                    <form action="index.html" method="post">
 
-        <section>
-            <form action="index.html" method="post">
+                        <fieldset>
+                            <legend>Vem är du?</legend>
+                            <p>
+                                <label for="förnamn">Förnamn:</label>
+                                <input type="text" name="förnamn" id="förnamn" required>
+                                <label for="förnamn" class="reqfield">
+                                    <strong class="required" title="Obligatorisk">*</strong>
+                                </label>
+                            </p>
 
-                <fieldset>
-                    <legend>Vem är du?</legend>
-                    <p>
-                        <label for="förnamn">Förnamn:</label>
-                        <input type="text" name="förnamn" id="förnamn" required>
-                        <label for="förnamn" class="reqfield">
-                            <strong class="required" title="Obligatorisk">*</strong>
-                        </label>
-                    </p>
+                            <p>
+                                <label for="efternamn">Efternamn:</label>
+                                <input type="text" name="efternamn" id="efternamn">
+                                <label for="förnamn" class="reqfield">
+                                    <strong class="required" title="Obligatorisk">*</strong>
+                                </label>
+                            </p>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <legend>Kontaktuppgifter</legend>
+                            <p>
+                                <label for="email">Email:</label>
+                                <input type="email" name="email" id="email" required>
+                                <label for="email" class="reqfield">
+                                    <strong class="required" title="Obligatorisk">*</strong>
+                                </label>
+                            </p>
 
-                    <p>
-                        <label for="efternamn">Efternamn:</label>
-                        <input type="text" name="efternamn" id="efternamn">
-                        <label for="förnamn" class="reqfield">
-                            <strong class="required" title="Obligatorisk">*</strong>
-                        </label>
-                    </p>
-                </fieldset>
-                
-                <fieldset>
-                    <legend>Kontaktuppgifter</legend>
-                    <p>
-                        <label for="email">Email:</label>
-                        <input type="email" name="email" id="email" required>
-                        <label for="email" class="reqfield">
-                            <strong class="required" title="Obligatorisk">*</strong>
-                        </label>
-                    </p>
+                            <p>
+                                <label for="tel">Tel:</label>
+                                <input type="tel" name="tel" id="tel" required>
+                                <label for="tel" class="reqfield">
+                                    <strong class="required" title="Obligatorisk">*</strong>
+                                </label>
+                            </p>
+                            <p>
+                                <label for="password">Lösenord:</label>
+                                <input type="password" name="password" id="password" required>
+                                <label for="password" class="reqfield">
+                                    <strong class="required" title="Obligatorisk">*</strong>
+                                </label>
+                            </p>
+                        </fieldset>
+                        
+                        <fieldset>
+                            <button type="submit"> Logga in</button>
+                        </fieldset>
+                    </form>
+                </section>
+            </main>
 
-                    <p>
-                        <label for="tel">Tel:</label>
-                        <input type="tel" name="tel" id="tel" required>
-                        <label for="tel" class="reqfield">
-                            <strong class="required" title="Obligatorisk">*</strong>
-                        </label>
-                    </p>
-                    <p>
-                        <label for="password">Lösenord:</label>
-                        <input type="password" name="password" id="password" required>
-                        <label for="password" class="reqfield">
-                            <strong class="required" title="Obligatorisk">*</strong>
-                        </label>
-                    </p>
-                </fieldset>
-                
-                <fieldset>
-                    <button type="submit"> Logga in</button>
-                </fieldset>
-            </form>
-        </section>
-    </main>
+            <footer>
+                <p>Markus Johansson <br> TE22A </p>
+            </footer>
+        </div>
 
-    <footer>
-        <p>Markus Johansson <br> TE22A </p>
-    </footer>
-</div>
-
-</body>
+    </body>
 </html>
