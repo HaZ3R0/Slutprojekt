@@ -185,7 +185,14 @@ caption{
 table, td, th{
     border: thin solid black;
     border-collapse: collapse;
-    width: 100%;
+}
+
+tfoot td{
+    color: rgb(73, 73, 228);
+}
+
+tfoot tr{
+    background-color: rgb(0, 0, 0, 0.2);
 }
 
 tr:nth-child(even){
@@ -228,9 +235,29 @@ footer{
     text-align: center;
 }
 
-a:link, a:visited, a:hover, a:active, a:focus{ /* LOVE FOUCUS HATE */
+a:link{ /* LOVE FOUCUS HATE är ned till media querien */
     text-decoration: none;
     color: rgb(255, 255,255);
+}
+
+a:visited{
+    text-decoration: none;
+    color: rgb(255, 255,255);
+}
+
+a:hover{
+    text-decoration: none;
+    color: rgb(255, 255,255);  
+}
+
+a:focus{
+    text-decoration: none;
+    color: rgb(255, 255,255); 
+}
+
+a:active{
+    text-decoration: none;
+    color: rgb(255, 255,255); 
 }
 
 @media only screen and (max-width: 800px){ /* Ändrar så när bredden är 800px som max så ändras dessa saker */
