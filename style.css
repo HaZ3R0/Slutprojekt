@@ -152,6 +152,10 @@ img{
     width: 80%;
 }
 
+ol li::first-line{
+    font-weight: bold;
+}
+
 h3 + p, h3 ~ p ~ video{ /* Klass selektor med angränsande syskon selektor och syskon selektor i, syskon selektor effekterar alla element som ligger efter det andra medan angränsade syskon slektor är direkt efter det andra */
     padding-left: 15px;
 }
