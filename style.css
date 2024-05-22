@@ -152,7 +152,7 @@ img{
     width: 80%;
 }
 
-ol li::first-line{
+ol li:first-line{
     font-weight: bold;
 }
 
@@ -239,29 +239,9 @@ footer{
     text-align: center;
 }
 
-a:link{ /* LOVE FOUCUS HATE är ned till media querien */
+a:link, a:visited, a:focus, a:hover, a:active { /* LOVE FOUCUS HATE */
     text-decoration: none;
     color: rgb(255, 255,255);
-}
-
-a:visited{
-    text-decoration: none;
-    color: rgb(255, 255,255);
-}
-
-a:hover{
-    text-decoration: none;
-    color: rgb(255, 255,255);  
-}
-
-a:focus{
-    text-decoration: none;
-    color: rgb(255, 255,255); 
-}
-
-a:active{
-    text-decoration: none;
-    color: rgb(255, 255,255); 
 }
 
 @media only screen and (max-width: 800px){ /* Ändrar så när bredden är 800px som max så ändras dessa saker */
